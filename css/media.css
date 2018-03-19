@@ -1,0 +1,133 @@
+/*==================================================/*==================================================
+=            Bootstrap 3 Media Queries             =
+https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .container {text-align: center;width: 100%; overflow-x: hidden; padding: 0;}
+    .content-container {padding: 0 12px;}
+
+    .main-slider .box {width: 85%;}
+    .main-slider .box img {width: 100%; height: auto;}    
+    .main-slider .rec-sm img {width: auto;}    
+
+    .main-systems {width: 100%;}   
+    .main-systems .box.small-box {width: 100%;}     
+    .main-systems .box {width: 49%;} 
+    .main-systems .box.seperator {background: none;} 
+
+    .card-image img {width: 100%;}   
+    .main-container {padding: 0;width: 100%;}  
+    .full-container {padding: 0;}   
+    .full-container > div {width: 100%;}    
+    .full-container div {text-align: center;}    
+    .extra-container {width: 100%;margin-top: 10px;}  
+    .extra-container .col-md-1{display: none;}
+    nav .container {  padding: 0 5px;  }
+    .widget-container{ text-align: left; padding-left: 20px;}
+    .navbar-brand.user-profile{right: auto;left: 0px;position: absolute;max-width: 70%;}
+    .navbar-collapse{ background: #fff;}
+    .navbar-dark{position:relative}
+    .navbar-dark .navbar-collapse {width: 100%;left: 0px;margin-left: 0px;background: #353d4e;top: 65px;position: absolute;border-top: 0px;box-shadow: inset 0px -6px 6px #cccccc3d;}
+    .navbar-dark .navbar-collapse ul ul li { background: #f7f7f7;}
+    .navbar-collapse .caret-wrapper{float: right;right: 0px;}
+    .navbar-collapse .list-form{display:none}
+    .dropdown:hover .dropdown-menu{display: none;}
+    .dropdown.open .dropdown-menu {display: block;}
+    .navbar-collapse li { float: none; text-align: left;}
+    .navbar-dark li.navbar-li.dropdown { background: url(../img/arrow-red-down.png) no-repeat right center;}
+    .navbar-dark li.navbar-li { background: none;}
+    .navbar-dark li.navbar-li:hover a {background-color: #c00 !important;background-image: none !important;color: #FFF !important;}
+    .navbar-dark li.navbar-li:hover li a { background: transparent !important; color: #555 !important;}
+    .navbar-dark li.navbar-li.open li:focus a, .navbar-dark li.navbar-li.open li a:focus {  color: #c00 !important; cursor: pointer !important;}
+
+    .content-container .card.two-cards {margin-bottom: 0;}    
+    .two-cards-container {margin-bottom: 20px;padding: 0;}
+    .card-two-location span {display: block;}
+    .card-two-location {margin-bottom: 10px;}
+
+    .caption-text {padding: 5px;}
+
+    .download-card .card-image {border-right: 0 none;max-width: 100%;}
+    .card-actions a {margin: 10px;}
+    .download-card .card-wrapper {min-height: auto;}
+    .filter-header-container .row > div {text-align: center;margin-bottom: 5px;}
+    .filter-header-container .form-search {width: 100%;}    
+    .filter-container .btn {width: 100%;}    
+    .filter-container .open>.dropdown-menu {width: 99%;}    
+    .fc-basic-view .fc-body .fc-row{min-height:4em !important}
+    .fc-scroller.fc-day-grid-container {min-height: 495px;overflow: hidden !important;}
+
+    .card-image {width: auto !important;height: auto !important;}
+    .navbar-light .navbar-collapse.collapse{display: none !important;}
+    .navbar-light .navbar-collapse.collapsing, .navbar-light .navbar-collapse.collapse.in {display: block !important;width: 100%;margin: 0;padding: 0 15px !important;}
+    .navbar-dark .navbar-li a {padding: 5px 25px;}
+    .navbar-light .navbar-brand {margin-left: 15px !important;}    
+    .nav-tabs li {min-width: auto;float:left !important;}    
+    .polices-card .card-actions a {margin: 0;width: 80px;text-align: center !important;padding: 5px;}    
+    .polices-card .card-actions {margin-bottom: 20px;}   
+    .polices-card .card-description {max-height: 65px;}    
+    .polices-card.centerlized-item .card-actions {height: 35px;}     
+}
+/* IPAD Small */
+@media only screen and (min-width : 768px) and (max-width : 900px) {
+    .navbar-collapse li {float: left;text-align: left;}
+    .navbar-collapse li ul li { float: none;}
+    nav .container{padding:0px;margin:0px}
+    .navbar-light{padding:0px;height: 62px;}
+    .navbar-brand.user-profile {margin: 0 auto !important;left: 0px;right: 0px;position: absolute;max-width: 50%;float: none;text-align: center;}
+    .navbar-dark li.navbar-li.dropdown{padding-right:5px}
+    .jumbotron{margin-top: 63px;}
+    .navbar-dark .navbar-collapse{top: 64px;border-top: 1px solid #5b616d47;}
+    .content-container{margin-top: 75px;}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
