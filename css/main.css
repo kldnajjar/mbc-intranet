@@ -317,4 +317,4 @@ section:after{ clear: both;content: '';display: block;}
 a:visited {color: #353d4e;}
 
 #s4-bodyContainer {padding-bottom: 0;}
-ul#UpperMenu li:last-child {float: right;position: relative;top: 10px;}
+#UpperMenu > li:last-child {float: right;position: relative;top: 10px;}
