@@ -44,7 +44,7 @@ https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .container {text-align: center;width: 100%; overflow-x: hidden; padding: 0;}
+    .container {text-align: center;width: 100%; overflow-x: hidden; padding: 0; margin-top: 15px;}
     .content-container {padding: 0 12px;}
 
     .main-slider .box {width: 85%;}
@@ -75,7 +75,7 @@ https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
     .dropdown:hover .dropdown-menu{display: none;}
     .dropdown.open .dropdown-menu {display: block;}
     .navbar-collapse li { float: none; text-align: left;}
-    .navbar-dark li.navbar-li.dropdown { background: url(../img/arrow-red-down.png) no-repeat right center;}
+    .navbar-dark li.navbar-li.dropdown { background: url(../img/arrow-red-down.png) no-repeat 95% center;}
     .navbar-dark li.navbar-li { background: none;}
     .navbar-dark li.navbar-li:hover a {background-color: #c00 !important;background-image: none !important;color: #FFF !important;}
     .navbar-dark li.navbar-li:hover li a { background: transparent !important; color: #555 !important;}
@@ -101,13 +101,17 @@ https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
     .card-image {width: auto !important;height: auto !important;}
     .navbar-light .navbar-collapse.collapse{display: none !important;}
     .navbar-light .navbar-collapse.collapsing, .navbar-light .navbar-collapse.collapse.in {display: block !important;width: 100%;margin: 0;padding: 0 15px !important;}
-    .navbar-dark .navbar-li a {padding: 5px 25px;}
+    .navbar-dark .navbar-li a {padding: 5px 25px !important;}
     .navbar-light .navbar-brand {margin-left: 15px !important;}    
     .nav-tabs li {min-width: auto;float:left !important;}    
     .polices-card .card-actions a {margin: 0;width: 80px;text-align: center !important;padding: 5px;}    
     .polices-card .card-actions {margin-bottom: 20px;}   
     .polices-card .card-description {max-height: 65px;}    
-    .polices-card.centerlized-item .card-actions {height: 35px;}     
+    .polices-card.centerlized-item .card-actions {height: 35px;}    
+    ul#UpperMenu li:last-child {text-align: center;} 
+    button.navbar-toggle {min-width: 40px;}
+
+
 }
 /* IPAD Small */
 @media only screen and (min-width : 768px) and (max-width : 900px) {
