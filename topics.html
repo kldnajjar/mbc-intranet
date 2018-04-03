@@ -24,6 +24,18 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+        var isIE = false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        if (isIE || isEdge) {
+            var head = document.head;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "css/main-ie.css";
+            head.appendChild(link);
+        }
+    </script>
     <link rel="stylesheet" href="css/media.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -230,7 +242,7 @@
                         </li>
                         <li class="navbar-li">
                             <a href="polices.html">Polices</a>
-                        </li>                            
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -238,10 +250,10 @@
     </header>
     <!-- /Header Nav Light and Dark -->
     <div class="jumbotron bg-white sub-header">
-            <div class="container">
-                <h1 class="red-color"> Topics</h1>
-            </div>
+        <div class="container">
+            <h1 class="red-color"> Topics</h1>
         </div>
+    </div>
 
     <!-- Main Content -->
     <div class="container content-container">

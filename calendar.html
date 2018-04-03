@@ -24,6 +24,18 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+        var isIE = false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        if (isIE || isEdge) {
+            var head = document.head;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "css/main-ie.css";
+            head.appendChild(link);
+        }
+    </script>
     <link rel="stylesheet" href="css/fullcalendar.min.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -39,210 +51,210 @@
     <header>
         <!-- Light Navbar -->
         <nav class="navbar navbar-light bg-faded navbar-default" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"></a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse nopadding">
-                        <ul class="nav navbar-nav nav-pills">
-                            <li class="dropdown navbar-li">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Tap 1
-                                    <div class='caret-wrapper'>
-                                        <span class="caret"></span>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu ">
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown navbar-li">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Tap Title 1
-                                    <div class='caret-wrapper'>
-                                        <span class="caret"></span>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown navbar-li">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Tap Title 1
-                                    <div class='caret-wrapper'>
-                                        <span class="caret"></span>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown navbar-li">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Tap Title 1
-                                    <div class='caret-wrapper'>
-                                        <span class="caret"></span>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class='list-form'>
-                                <!-- Search -->
-                                <form class="navbar-form navbar-right" role="form">
-                                    <div class="form-group form-search">
-                                        <button type="submit" class="btn btn-default btn-search"></button>
-                                        <input type="text" placeholder="Search" class="form-control">
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/.navbar-collapse -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
                 </div>
-            </nav>
-            <!-- Dark Navbar-->
-            <nav class="navbar navbar-dark navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dnav" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand user-profile" href="#">
-                            <img src='./img/avatar.png' class='avatar' />
-                            <span>Rida Al Jamal</span>
-                        </a>
-                    </div>
-                    <div id="dnav" class="collapse navbar-collapse nopadding">
-                        <ul class="nav navbar-nav">
-                            <li class="navbar-li">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="topics.html">Topics</a>
-                            </li>
-                            <li class="dropdown navbar-li">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    List View
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="list-view.html" class="navbar-link">Open</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown navbar-li">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Gallery
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="gallery.html" class="navbar-link">Open</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="navbar-link">Test 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="category-view.html">Category View</a>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="download.html">Download</a>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="deals.html">Deals</a>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="calendar.html">Calendar</a>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="article.html">Article</a>
-                            </li>
-                            <li class="navbar-li">
-                                <a href="polices.html">Polices</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div id="navbar" class="navbar-collapse collapse nopadding">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="dropdown navbar-li">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tap 1
+                                <div class='caret-wrapper'>
+                                    <span class="caret"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li>
+                                    <a href="#" class="navbar-link">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navbar-li">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tap Title 1
+                                <div class='caret-wrapper'>
+                                    <span class="caret"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="navbar-link">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navbar-li">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tap Title 1
+                                <div class='caret-wrapper'>
+                                    <span class="caret"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="navbar-link">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navbar-li">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tap Title 1
+                                <div class='caret-wrapper'>
+                                    <span class="caret"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="navbar-link">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='list-form'>
+                            <!-- Search -->
+                            <form class="navbar-form navbar-right" role="form">
+                                <div class="form-group form-search">
+                                    <button type="submit" class="btn btn-default btn-search"></button>
+                                    <input type="text" placeholder="Search" class="form-control">
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+                <!--/.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- Dark Navbar-->
+        <nav class="navbar navbar-dark navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dnav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand user-profile" href="#">
+                        <img src='./img/avatar.png' class='avatar' />
+                        <span>Rida Al Jamal</span>
+                    </a>
+                </div>
+                <div id="dnav" class="collapse navbar-collapse nopadding">
+                    <ul class="nav navbar-nav">
+                        <li class="navbar-li">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="topics.html">Topics</a>
+                        </li>
+                        <li class="dropdown navbar-li">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                List View
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="list-view.html" class="navbar-link">Open</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navbar-li">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="gallery.html" class="navbar-link">Open</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-link">Test 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="category-view.html">Category View</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="download.html">Download</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="deals.html">Deals</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="calendar.html">Calendar</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="article.html">Article</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="polices.html">Polices</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- /Header Nav Light and Dark -->
     <div class="jumbotron bg-white sub-header">
-            <div class="container">
-                <h1 class="red-color"> Calendar</h1>
-            </div>
+        <div class="container">
+            <h1 class="red-color"> Calendar</h1>
         </div>
+    </div>
 
     <!-- Main Content -->
     <div class="container content-container">

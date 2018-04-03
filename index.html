@@ -25,8 +25,21 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+    <script>
+        var isIE = false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        if (isIE || isEdge) {
+            var head = document.head;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "css/main-ie.css";
+            head.appendChild(link);
+        }
+    </script>
 
+
+    <link rel="stylesheet" href="css/media.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -376,7 +389,8 @@
                                     </a>
                                 </div>
                                 <div class="card-description">
-                                        Lorem iptum dolor sit amet, consectetur adipiscing elit orem ipsum dolor amet, consectetur adipiscing elit Lorem iptum dolor sit amet, consectetur adipiscing elit orem ipsum dolor 
+                                    Lorem iptum dolor sit amet, consectetur adipiscing elit orem ipsum dolor amet, consectetur adipiscing elit Lorem iptum dolor
+                                    sit amet, consectetur adipiscing elit orem ipsum dolor
                                 </div>
                                 <div class="card-features">
                                     <div class="tag-container">

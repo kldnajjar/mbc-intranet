@@ -24,6 +24,18 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+        var isIE = false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        if (isIE || isEdge) {
+            var head = document.head;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = "css/main-ie.css";
+            head.appendChild(link);
+        }
+    </script>
     <link rel="stylesheet" href="css/media.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -283,30 +295,30 @@
                         </ul>
 
                         <div class="tabs-container active" id="business-container">
-                                <a href="#">On air</a>
-                                <a href="#" class="active">Editorial</a>
-                                <a href="#">Customers</a>
-                                <a href="#">Acquisition</a>
-                                <a href="#">Social Media</a>
-                            </div>
-        
-        
-                            <div class="tabs-container" id="corporate-container">
-                                    <a href="#">On air corporate</a>
-                                    <a href="#" class="active">Editorial corporate</a>
-                                    <a href="#">Customers corporate</a>
-                                    <a href="#">Acquisition corporate</a>
-                                    <a href="#">Social Media corporate</a>
-                            </div>
-        
-        
-                            <div class="tabs-container" id="employees-container">
-                                    <a href="#">On air employees</a>
-                                    <a href="#" class="active">Editorial employees</a>
-                                    <a href="#">Customers employees</a>
-                                    <a href="#">Acquisition employees</a>
-                                    <a href="#">Social Media employees</a>
-                            </div>                        
+                            <a href="#">On air</a>
+                            <a href="#" class="active">Editorial</a>
+                            <a href="#">Customers</a>
+                            <a href="#">Acquisition</a>
+                            <a href="#">Social Media</a>
+                        </div>
+
+
+                        <div class="tabs-container" id="corporate-container">
+                            <a href="#">On air corporate</a>
+                            <a href="#" class="active">Editorial corporate</a>
+                            <a href="#">Customers corporate</a>
+                            <a href="#">Acquisition corporate</a>
+                            <a href="#">Social Media corporate</a>
+                        </div>
+
+
+                        <div class="tabs-container" id="employees-container">
+                            <a href="#">On air employees</a>
+                            <a href="#" class="active">Editorial employees</a>
+                            <a href="#">Customers employees</a>
+                            <a href="#">Acquisition employees</a>
+                            <a href="#">Social Media employees</a>
+                        </div>
                     </div>
 
 
