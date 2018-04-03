@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script>
         var isIE = false || !!document.documentMode;
-        var isEdge = !isIE && !!window.StyleMedia;
-        if (isIE || isEdge) {
+        if (isIE) {
             var head = document.head;
             var link = document.createElement("link");
             link.type = "text/css";
