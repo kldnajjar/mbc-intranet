@@ -317,3 +317,13 @@ section:after{ clear: both;content: '';display: block;}
 
 #s4-bodyContainer {padding-bottom: 0;}
 #UpperMenu > li:last-child {float: right;position: relative;top: 10px;}
+
+/** new **/
+a:visited {color: inherit;}
+.card-features > div {width: 100%;}
+.card-image img {height: 145px;}
+.card-features > .tag-container,
+.card-features > .read-more-container {width: 100%;}
+.card-two-wrapper {height: 110px;}
+.caption-text {font-size: 28px;}
+.caption-text.opacity-red-bg {padding-top: 15px;}
